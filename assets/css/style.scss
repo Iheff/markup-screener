@@ -1,0 +1,142 @@
+$top-stripe: #f77539;
+$header-stripe: #025da4;
+$link-color: #1a6aa9;
+$input-bg:#f9f9f9;
+$font: Arial, sans-serif;
+$border:#b0b4b7;
+$bg:#dfe0e2;
+$foot-color:#737478;
+$primary-btn-bg:#05813b;
+$primary-btn-color:#fff;
+$primary-btn-border:#013318;
+$input-width:160px;
+
+// prepare body
+
+body{
+	margin:0px;
+	padding:0px;
+	font-family: $font;
+	border-top: 3px solid $top-stripe;
+	
+
+}
+* { Box-sizing: Border-box } 
+
+//structure
+.wrap{
+	margin:0 5em;
+	@media screen and (max-width: 780px) {
+		margin:0 3em;
+	}
+	@media screen and (max-width: 480px) {
+		margin:0 1em;
+	}
+}
+
+img {max-width:100%}
+
+header {
+	padding-top:1em;
+	border-top: 10px solid $header-stripe;
+}
+footer{
+	background:$bg;
+	border-top:1px solid $border;
+	color:$foot-color;
+	padding:4em 5em;
+	margin-top:4em;
+	> aside {
+		float:right;
+	}
+}
+
+// typography
+ h1 {
+ 	font-size:3em;
+ }
+ form legend {
+ 	font-size: 1.5em;
+ 	font-weight:bold;
+ 	margin-bottom:1em;
+ }
+ a, a:visited {
+ 	color:$link-color;
+ }
+
+// form
+fieldset, legend {
+    border: 0;
+    margin:0;
+    padding:0;
+}
+label{
+	margin-bottom:1em;
+}
+.help-link{
+	padding-left:2em;
+}
+
+.form-section {
+	margin-bottom:2em
+}
+form input[type=submit]{
+	background:$primary-btn-bg;
+	color:$primary-btn-color;
+	border-top:0;
+	border-left:0;
+	border-right:0;
+	border-bottom:2px $primary-btn-border;
+	font-size:16px;
+	padding:9px;
+	line-height:16px;
+	margin-bottom:2em;
+
+}
+
+.input{
+	margin:0;
+	padding:0;
+	&.input-text{
+		display:block;
+		width:$input-width;
+		background:$input-bg;
+		line-height:2em;
+		font-size: 1em;
+		border:0;
+		border: 1px solid #e6e6e6;
+		border-top-color:#9c9c9c;
+		border-left-color:#9c9c9c;
+		-webkit-box-shadow: inset 1px 1px 2px 0px rgba(227,227,227,1);
+		-moz-box-shadow: inset 1px 1px 2px 0px rgba(227,227,227,1);
+		box-shadow: inset 1px 1px 2px 0px rgba(227,227,227,1);
+		padding:0 .5em;
+		margin-top:.5em;
+	}
+}
+
+
+//footer
+
+footer {
+	ul{ 
+		padding:0;
+		margin:5.5em 0 0;
+		list-style: none;
+		
+		li{
+			display:inline-block;
+		}
+	}
+	a,a:link,a:visited{
+		color:$foot-color;
+		cursor: pointer;
+	}
+}
+.footer-content-wrap{
+	p,ul{margin-right:2em;}
+}
+
+.crown-stamp{
+	padding-left:3em;
+}
